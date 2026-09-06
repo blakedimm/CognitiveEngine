@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CognitiveEngine.Domain\CognitiveEngine.Domain.csproj" />
+    <ProjectReference Include="..\CognitiveEngine.Core.Search\CognitiveEngine.Core.Search.csproj" />
+  </ItemGroup>
+
+</Project>

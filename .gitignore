@@ -1,0 +1,57 @@
+## Build and Compilation Artifacts (.NET)
+bin/
+obj/
+out/
+[Bb]uild/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userprefs
+
+## IDE & Editors
+.vs/
+.vscode/
+.idea/
+*.swp
+*.*~
+.DS_Store
+
+## Python & Ingestion Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+## Vector Databases & Storage (КРИТИЧНО: огромные бинарные файлы)
+lance_store*/
+*.lance/
+*.duckdb
+*.parquet
+*.lance_db/
+*.db-shm
+*.db-wal
+
+## Logs & Temporary Dumps
+*.log
+logs/
+benchmarks/runs/
+temp/
+tmp/
+dumps/
+
+## Sensitive Data & Local Environment
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+appsettings.Local.json
+
+## Crash dumps and core dumps
+*.dmp
+*.crashsrc/all_project_code.txt
+src/v.py
