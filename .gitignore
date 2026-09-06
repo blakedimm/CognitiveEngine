@@ -55,3 +55,4 @@ appsettings.Local.json
 *.dmp
 *.crashsrc/all_project_code.txt
 src/v.py
+src/all_project_code.txt
