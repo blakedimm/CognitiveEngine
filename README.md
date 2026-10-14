@@ -1,4 +1,4 @@
-# CognitiveEngine: Neuro-Symbolic Cognitive Core (.NET 10)
+# CognitiveEngine: Neuro-Symbolic Cognitive Core 
 
 [![.NET 10](https://img.shields.io/badge/.NET-10.0-purple.svg)](https://dotnet.microsoft.com/)
 [![Architecture](https://img.shields.io/badge/Architecture-ECS%20%2B%20MCTS%20%2B%20GNN-blue.svg)]()
@@ -9,7 +9,7 @@
 
 ---
 
-## 🔬 Motivation: The Multi-Hop Blind Spot of Vector RAG
+## Motivation: The Multi-Hop Blind Spot of Vector RAG
 
 Standard Retrieval-Augmented Generation (Vector RAG) approaches treat source code as chunks of natural language text, relying on cosine similarity in embedding space. While effective for localized semantic queries (*"Where is the database connection configured?"*), this paradigm fundamentally fails on **transitive execution trajectories**:
 
@@ -40,7 +40,7 @@ flowchart LR
 
 ---
 
-## 🏛 Architectural Pillars
+## Architectural Pillars
 
 ### 1. Entity-Component-System (ECS) for Cognitive Epistemics
 
@@ -62,7 +62,7 @@ The system benchmarks three execution paradigms side-by-side:
 
 ---
 
-## ⚙️ Experimental Setup & Inference Environment
+## Experimental Setup & Inference Environment
 
 All benchmarks were conducted locally in a reproducible environment under identical system load to measure raw symbolic latency, memory safety, and generation fidelity.
 
@@ -89,7 +89,7 @@ All benchmarks were conducted locally in a reproducible environment under identi
 
 ---
 
-## 📋 Scenario-by-Scenario Benchmark Telemetry
+## Scenario-by-Scenario Benchmark Telemetry
 
 ### Scenario 1 — Multi-Hop Transitive Control Flow `[MULTIHOP]`
 
@@ -110,7 +110,7 @@ All benchmarks were conducted locally in a reproducible environment under identi
 | B  | — | — | 33.3% (1/3) | 0 | ❌ 0 Hops (Chain: False) |
 
 <details>
-<summary>📝 Path A1 — GWM Engine Response</summary>
+<summary>Path A1 — GWM Engine Response</summary>
 
 **Архитектурный отчёт ECS**
 
@@ -153,7 +153,7 @@ func_code_ingest_main
 </details>
 
 <details>
-<summary>⚠️ Path B — Vector RAG Baseline Response</summary>
+<summary>Path B — Vector RAG Baseline Response</summary>
 
 ```
 Извините, но в предоставленных фрагментах кода нет упоминания метода code_ingest.
@@ -204,7 +204,7 @@ func_graph_optimizer_main_cli
 | B  | — | — | 0.0% (0/1) | 0 | ❌ 0.0% |
 
 <details>
-<summary>📝 Path A1 — GWM Engine Response</summary>
+<summary>Path A1 — GWM Engine Response</summary>
 
 **Архитектурный отчёт ECS**
 
@@ -232,7 +232,7 @@ graph TD
 </details>
 
 <details>
-<summary>⚠️ Path B — Vector RAG Baseline Response</summary>
+<summary>Path B — Vector RAG Baseline Response</summary>
 
 ```
 В коде, предоставленном фрагментами, метод reset_parameters вызывается
@@ -268,7 +268,7 @@ model_v7_graphsageencoder вызывают метод reset_parameters.
 | B  | 100.0% (0/0) | 0 | ✅ Refused (Correct) |
 
 <details>
-<summary>📝 Path A1 — GWM Engine Response</summary>
+<summary>Path A1 — GWM Engine Response</summary>
 
 **Архитектурный отчёт ECS**
 
@@ -292,7 +292,7 @@ func_graph_optimizer_optimize_topology, func_main_federatednodesproxy_to_pandas,
 </details>
 
 <details>
-<summary>⚠️ Path B — Vector RAG Baseline Response</summary>
+<summary>Path B — Vector RAG Baseline Response</summary>
 
 ```
 На основе предоставленных фрагментов кода, нет упоминания функции catch_crash
@@ -331,7 +331,7 @@ TransformerDecoder.
 | B  | 0.0% (0/0 claimed) | 0 | — |
 
 <details>
-<summary>📝 Path A1 — GWM Engine Response</summary>
+<summary>Path A1 — GWM Engine Response</summary>
 
 ```
 Модуль pipeline_v7 содержит класс TensorizationPipeline, который инкапсулирует методы
@@ -357,7 +357,7 @@ generate_sparse_hard_negatives из TensorizationPipeline вызываются �
 
 ---
 
-## 📊 Summary Ground-Truth Matrix
+## Summary Ground-Truth Matrix
 
 | Категория | Latency A0 | Latency A1 | Latency B | Prose PVR A1 | Prose PVR B | Вердикт |
 |-----------|:----------:|:----------:|:---------:|:------------:|:-----------:|---------|
@@ -371,7 +371,7 @@ generate_sparse_hard_negatives из TensorizationPipeline вызываются �
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
