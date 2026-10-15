@@ -393,6 +393,6 @@ dotnet run --project src/CognitiveEngine.Cli -- benchmark
 
 ---
 
-## 📄 License
+## License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
